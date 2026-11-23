@@ -482,7 +482,7 @@ const DATA = {
   updated: '2026.11.23',
   notice: '部分资源仍在补档，链接缺失或失效欢迎反馈。',
   updates: [
-    { d: '11.23', t: 'H700 分类新增 PORTS移植游戏合集并补链接' }
+    { d: '11.23', t: 'H700 新增移植游戏合集，PORTS 分类改为友情链接' }
   ],
   sections: [
     {
@@ -520,8 +520,8 @@ const DATA = {
       rows: []
     },
     {
-      id: 'ports', kicker: 'PORTS', title: 'PORTS 移植游戏', icon: 'chip',
-      desc: '开源系统 Ports 移植游戏，按作品归档。',
+      id: 'ports', kicker: 'PORTS', title: 'PORTS移植游戏友情链接', icon: 'chip',
+      desc: 'Ports 移植游戏相关的友情链接与资源站。', empty: '友情链接整理中，稍后补上。',
       rows: []
     }
   ]
@@ -578,7 +578,7 @@ function linkHTML(link) {
 /* ================= 渲染 ================= */
 function tableHTML(sec) {
   if (!sec.rows.length) {
-    return '<div class="panel panel-empty">该分类资源正在整理，稍后补上。</div>';
+    return '<div class="panel panel-empty">' + esc(sec.empty || '该分类资源正在整理，稍后补上。') + '</div>';
   }
   const rows = sec.rows.map(row => {
     const hay = (row.name + ' ' + row.note + ' ' + (row.tags || []).join(' ')).toLowerCase();
