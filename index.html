@@ -460,7 +460,7 @@ tbody tr:hover td{background:var(--row-hover)}
     </div>
     <div class="foot-meta">
       <span>© 2026 掌机阁</span>
-      <span>Static Site · GitHub Pages Ready</span><span class="foot-stats">总访问 <b id="busuanzi_value_site_pv">—</b> 次 · 访客 <b id="busuanzi_value_site_uv">—</b> 人</span>
+      <span>Static Site · GitHub Pages Ready</span><span class="foot-stats">总访问 <b id="sitePv">—</b> 次</span>
     </div>
   </footer>
 </main>
@@ -864,5 +864,5 @@ if (location.hash) {
   if (target) setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
 }
 </script>
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
+<script>(function(){var el=document.getElementById('sitePv');if(!el||!window.fetch)return;fetch('https://abacus.jasoncameron.dev/hit/langos791-zjg/site',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){if(d&&typeof d.value==='number')el.textContent=d.value.toLocaleString('zh-CN');}).catch(function(){});})();</script></body>
 </html>
