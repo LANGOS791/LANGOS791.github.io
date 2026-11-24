@@ -301,7 +301,7 @@ tbody tr:hover td{background:var(--row-hover)}
 }
 .foot-notes p{margin:0 0 8px;line-height:1.7}
 .foot-notes strong{color:var(--text2);font-weight:600;margin-right:4px}
-.foot-meta{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right;font-family:var(--mono);font-size:11px;line-height:1.6} .donate{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:18px 22px;border:1px solid var(--line2);border-radius:16px;background:linear-gradient(120deg,var(--panel2),var(--panel))} .dn-text{min-width:0} .dn-kicker{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)} .dn-text b{display:block;margin:7px 0;font-size:16px;color:var(--text)} .dn-text p{margin:0;font-size:12.5px;color:var(--text2);line-height:1.7;max-width:40ch} .dn-qr{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0;padding:0;flex:none} .dn-qr img{display:block;width:150px;height:auto;padding:6px;border-radius:10px;background:#fff} .dn-qr figcaption{font-size:11.5px;color:var(--text3)}
+.foot-meta{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right;font-family:var(--mono);font-size:11px;line-height:1.6} .donate{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:18px 22px;border:1px solid var(--line2);border-radius:16px;background:linear-gradient(120deg,var(--panel2),var(--panel))} .dn-text{min-width:0} .dn-kicker{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)} .dn-text b{display:block;margin:7px 0;font-size:16px;color:var(--text)} .dn-text p{margin:0;font-size:12.5px;color:var(--text2);line-height:1.7;max-width:40ch} .dn-qr{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0;padding:0;flex:none} .dn-qr img{display:block;width:150px;height:auto;padding:6px;border-radius:10px;background:#fff} .dn-qr figcaption{font-size:11.5px;color:var(--text3)} .foot-stats{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline;font-family:var(--mono);font-size:11px;color:var(--text3)} .foot-stats b{color:var(--accent);font-weight:700;font-size:12px}
 
 /* ================= 浮层 ================= */
 .toast{
@@ -460,7 +460,7 @@ tbody tr:hover td{background:var(--row-hover)}
     </div>
     <div class="foot-meta">
       <span>© 2026 掌机阁</span>
-      <span>Static Site · GitHub Pages Ready</span>
+      <span>Static Site · GitHub Pages Ready</span><span class="foot-stats">总访问 <b id="busuanzi_value_site_pv">—</b> 次 · 访客 <b id="busuanzi_value_site_uv">—</b> 人</span>
     </div>
   </footer>
 </main>
@@ -864,5 +864,5 @@ if (location.hash) {
   if (target) setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
 }
 </script>
-</body>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></body>
 </html>
