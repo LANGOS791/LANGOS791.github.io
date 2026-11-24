@@ -174,7 +174,7 @@ main{padding-bottom:30px}
 }
 .notice-badge{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--accent);border:1px solid var(--line2);border-radius:4px;padding:1px 6px;flex:none}
 .notice button{margin-left:auto;flex:none;border:0;background:transparent;color:var(--text3);font-size:16px;line-height:1;padding:4px}
-.notice button:hover{color:var(--accent)}
+.notice button:hover{color:var(--accent)} .tips{margin-top:14px;padding:14px 16px;border:1px solid var(--line2);border-radius:14px;background:linear-gradient(160deg,var(--panel2),var(--panel))} .tips-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap} .tips-badge{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;background:var(--accent);color:var(--accent-ink);border-radius:4px;padding:2px 8px;flex:none} .tips-head b{font-size:13.5px;font-weight:800} .tips-codes{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px} .tips-lb{font-size:12px;color:var(--text3);margin-right:2px} .tips-codes .code-chip{cursor:pointer} .tips-note{margin:10px 0 0;font-size:12.5px;color:var(--text2);line-height:1.7} .tips-note strong{color:var(--accent2);font-weight:700}
 
 /* ================= 板块 ================= */
 .sec{scroll-margin-top:96px;padding-top:36px}
@@ -440,7 +440,7 @@ tbody tr:hover td{background:var(--row-hover)}
     <div class="result" id="result">共 42 条资源</div>
   </div>
 
-  <div class="notice" id="notice">
+  <section class="tips" aria-label="温馨提示"><div class="tips-head"><span class="tips-badge">温馨提示</span><b>本站解压密码有以下几种，密码不对就换一个再试</b></div><div class="tips-codes"><span class="tips-lb">密码（点一下即可复制）：</span><button class="code-chip" type="button" data-copy="逍遥浪子" data-copy-label="密码" title="点击复制密码"><b>逍遥浪子</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="10.5" height="10.5" rx="2.2"/><path d="M15 6.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5"/></svg></button><button class="code-chip" type="button" data-copy="浪子玩数码" data-copy-label="密码" title="点击复制密码"><b>浪子玩数码</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="10.5" height="10.5" rx="2.2"/><path d="M15 6.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5"/></svg></button><button class="code-chip" type="button" data-copy="lang" data-copy-label="密码" title="点击复制密码"><b>lang</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="10.5" height="10.5" rx="2.2"/><path d="M15 6.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5"/></svg></button><button class="code-chip" type="button" data-copy="q群734633324" data-copy-label="密码" title="点击复制密码"><b>q群734633324</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="10.5" height="10.5" rx="2.2"/><path d="M15 6.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5"/></svg></button><button class="code-chip" type="button" data-copy="q群1055645137" data-copy-label="密码" title="点击复制密码"><b>q群1055645137</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="10.5" height="10.5" rx="2.2"/><path d="M15 6.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5"/></svg></button><button class="code-chip" type="button" data-copy="langos" data-copy-label="密码" title="点击复制密码"><b>langos</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="10.5" height="10.5" rx="2.2"/><path d="M15 6.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h.5"/></svg></button></div><p class="tips-note"><strong>手机端无法解压</strong>，请用电脑端 WinRAR 解压；不会的话可以百度搜「WinRAR」下载安装。</p></section><div class="notice" id="notice">
     <span class="notice-badge">补档</span>
     <span id="noticeText">部分资源仍在补档，链接缺失或失效欢迎反馈。</span>
     <button id="noticeClose" type="button" aria-label="关闭提示">×</button>
@@ -482,7 +482,7 @@ const DATA = {
   updated: '2026.11.23',
   notice: '部分资源仍在补档，链接缺失或失效欢迎反馈。',
   updates: [
-    { d: '11.24', t: 'A133P 新增 迪优米D40max线刷' }
+    { d: '11.24', t: '新增 解压密码温馨提示' }
   ],
   sections: [
     {
@@ -746,7 +746,7 @@ document.addEventListener('click', e => {
   }
   const copyBtn = e.target.closest('[data-copy]');
   if (copyBtn) {
-    copyText(copyBtn.dataset.copy);
+    copyText(copyBtn.dataset.copy, copyBtn.dataset.copyLabel);
     return;
   }
   const demo = e.target.closest('[data-demo]');
@@ -761,8 +761,8 @@ document.addEventListener('click', e => {
   }
 });
 
-function copyText(text) {
-  const done = () => showToast('提取码已复制：' + text);
+function copyText(text, label) {
+  const done = () => showToast((label || '提取码') + '已复制：' + text);
   const fallback = () => {
     try {
       const ta = document.createElement('textarea');
