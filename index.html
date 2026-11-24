@@ -301,7 +301,7 @@ tbody tr:hover td{background:var(--row-hover)}
 }
 .foot-notes p{margin:0 0 8px;line-height:1.7}
 .foot-notes strong{color:var(--text2);font-weight:600;margin-right:4px}
-.foot-meta{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right;font-family:var(--mono);font-size:11px;line-height:1.6}
+.foot-meta{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right;font-family:var(--mono);font-size:11px;line-height:1.6} .donate{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:18px 22px;border:1px solid var(--line2);border-radius:16px;background:linear-gradient(120deg,var(--panel2),var(--panel))} .dn-text{min-width:0} .dn-kicker{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--accent)} .dn-text b{display:block;margin:7px 0;font-size:16px;color:var(--text)} .dn-text p{margin:0;font-size:12.5px;color:var(--text2);line-height:1.7;max-width:40ch} .dn-qr{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0;padding:0;flex:none} .dn-qr img{display:block;width:150px;height:auto;padding:6px;border-radius:10px;background:#fff} .dn-qr figcaption{font-size:11.5px;color:var(--text3)}
 
 /* ================= 浮层 ================= */
 .toast{
@@ -453,7 +453,7 @@ tbody tr:hover td{background:var(--row-hover)}
     <span>换个关键词试试，或到 B 站「掌机阁」私信告诉二哥补档。</span>
   </div>
 
-  <footer class="site-footer">
+  <div class="donate"><div class="dn-text"><span class="dn-kicker">支持一下</span><b>如果本站对你有帮助，欢迎捐赠</b><p>扫码打赏，金额随意，都用来买机器、维护资源与补档。</p></div><figure class="dn-qr"><img src="donate.png" alt="支付宝捐赠二维码" loading="lazy"><figcaption>推荐使用支付宝扫码</figcaption></figure></div><footer class="site-footer">
     <div class="foot-notes">
       <p><strong>免责声明</strong>本站资源均来自网络收集与网友分享，仅供学习、测试与技术研究，请于下载后 24 小时内删除；版权归原作者所有，如有侵权请联系删除。</p>
       <p><strong>刷机提示</strong>刷机有风险，操作前务必备份重要数据；请按机型选择对应镜像，切勿混刷。</p>
@@ -482,7 +482,7 @@ const DATA = {
   updated: '2026.11.23',
   notice: '部分资源仍在补档，链接缺失或失效欢迎反馈。',
   updates: [
-    { d: '11.24', t: '安卓资源 新增 安卓手柄游戏' }
+    { d: '11.24', t: '页脚新增 捐赠支持入口' }
   ],
   sections: [
     {
